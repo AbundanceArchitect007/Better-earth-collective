@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Involved — Better Earth Collective</title>
+<meta name="description" content="Start a conversation with the Better Earth Collective.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<style>
+  input.field, textarea.field, select.field{width:100%;font-family:'IBM Plex Sans',sans-serif;}
+  textarea.field{resize:vertical;min-height:90px;}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;}
+  @media (max-width:900px){.contact-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <nav class="nav">
+    <div class="brand">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#23324a" stroke-width="1.5">
+        <path d="M4 15 Q6 12 8 15 T12 15 T16 15 T20 15" stroke-linecap="round"/>
+        <path d="M12 3 L12 13" stroke-linecap="round"/>
+        <path d="M7 6 L12 3 L17 6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="12" cy="15" r="9" stroke-opacity="0.35"/>
+      </svg>
+      <span class="brand-name">BETTER EARTH COLLECTIVE</span>
+    </div>
+    <div class="nav-links">
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink" href="framework.html">Framework</a>
+      <a class="navlink" href="pillars.html">Nine Pillars</a>
+      <a class="navlink" href="team.html">Team</a>
+      <a class="btn btn-primary btn-sm" href="contact.html" style="border-bottom:none;">Get Involved</a>
+    </div>
+  </nav>
+
+  <div class="contact-grid">
+
+    <div class="hero" style="padding:96px 64px;">
+      <div class="mono" style="color:var(--copper);font-size:12px;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:24px;">Get Involved</div>
+      <h1 class="display" style="color:var(--paper);font-size:38px;font-weight:600;line-height:1.25;margin:0 0 24px;max-width:440px;">Milestone 1, core team Recruitment.</h1>
+      <p style="color:oklch(80% 0.02 240);font-size:15.5px;line-height:1.75;max-width:440px;margin:0 0 40px;">Whether you're a prospective founding steward, a strategic investor aligned with mission-locked structures, or a partner within one of the nine pillars — the first step is the same conversation: the real document, plainly stated terms, and room for a counter-proposal.</p>
+
+      <div style="display:flex;flex-direction:column;gap:22px;max-width:440px;">
+        <div style="display:flex;gap:14px;">
+          <div class="mono" style="color:var(--copper);font-size:13px;">01</div>
+          <div style="color:oklch(85% 0.01 240);font-size:14px;line-height:1.6;">See the real document — not a summary, the full Planetary Stewardship Framework.</div>
+        </div>
+        <div style="display:flex;gap:14px;">
+          <div class="mono" style="color:var(--copper);font-size:13px;">02</div>
+          <div style="color:oklch(85% 0.01 240);font-size:14px;line-height:1.6;">Nothing is decided — names, percentages and structures are a starting proposal.</div>
+        </div>
+        <div style="display:flex;gap:14px;">
+          <div class="mono" style="color:var(--copper);font-size:13px;">03</div>
+          <div style="color:oklch(85% 0.01 240);font-size:14px;line-height:1.6;">Room for a counter-proposal — this document is an opening position, not a final offer.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding:96px 64px;">
+      <div class="mono" style="font-size:12px;letter-spacing:0.1em;color:var(--steel);margin-bottom:14px;">REQUEST THE PROSPECTUS</div>
+      <h2 class="display" style="font-size:26px;font-weight:600;margin:0 0 32px;">Start the conversation.</h2>
+
+      <!--
+        This form has no backend on GitHub Pages (which only serves static files).
+        Two easy options once this is live:
+          1. Leave the mailto: action below — it opens the visitor's email client instead of submitting silently.
+          2. For a real inbox + submissions table, swap the <form> action for a service like
+             Formspree or Netlify Forms (both have a generous free tier and a two-line setup).
+      -->
+      <form action="mailto:YOUR-EMAIL@example.com" method="post" enctype="text/plain" style="display:flex;flex-direction:column;gap:20px;max-width:440px;">
+        <div>
+          <label class="label" for="name">Name</label>
+          <input class="field" type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label class="label" for="email">Email</label>
+          <input class="field" type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label class="label" for="role">I am reaching out as a...</label>
+          <select class="field" id="role" name="role">
+            <option>Prospective steward</option>
+            <option>Investor</option>
+            <option>Partner</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label class="label" for="message">Message</label>
+          <textarea class="field" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" style="justify-content:center;margin-top:8px;">Send Request</button>
+      </form>
+
+      <div style="margin-top:56px;padding-top:32px;border-top:1px solid var(--paper-line);">
+        <span class="label">Direct</span>
+        <a class="mono" href="mailto:YOUR-EMAIL@example.com" style="font-size:14px;color:var(--navy);">[YOUR CONTACT EMAIL]</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-legal">
+      © 2026 THE BETTER EARTH COLLECTIVE — WORKING TITLE<br/>
+      DRAFT FOR FOUNDING DISCUSSION, LEGAL, TAX AND INVESTMENT REVIEW · NOT LEGAL, FINANCIAL, SECURITIES OR TAX ADVICE
+    </div>
+    <a class="footer-contact" href="mailto:YOUR-EMAIL@example.com">[YOUR CONTACT EMAIL]</a>
+  </footer>
+
+</div>
+</body>
+</html>
